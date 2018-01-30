@@ -20,6 +20,12 @@ The architecture was inspired by [U-Net: Convolutional Networks for Biomedical I
 ## Overview
 
 ### Data
+```bash
+  cd data
+  mkdir stage1_train stage1_test
+  unzip stage1_train.zip -d stage1_train/
+  unzip stage1_test.zip -d stage1_test/
+```
 Data for the competition is available in the data folder.```data_util.py``` just loads the images and saves them into NumPy binary format files **.npy** for faster loading later.
 
 ### Pre-processing
