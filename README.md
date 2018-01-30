@@ -29,7 +29,7 @@ The architecture was inspired by [U-Net: Convolutional Networks for Biomedical I
 Data for the competition is available in the data folder.```data_util.py``` just loads the images and saves them into NumPy binary format files **.npy** for faster loading later.
 
 ### Pre-processing
-The images are not pre-processed in any way,except resizing 128 x 128
+The images are not pre-processed in any way,except resizing 256 x 256
 
 ### Run the model
 ```bash
