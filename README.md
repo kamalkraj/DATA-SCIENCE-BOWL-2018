@@ -46,6 +46,18 @@ It will train,predict and generate submission file
 
 To learn more about colab [Click Here](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
 
+### Training
+ The model is trained for 150 epochs,where each epoch took 8sec on NVIDIA K80 GPU
+ loss function used keras binary_cross_entropy
+ The weights are updated by Adam optimizer, with a 1e-5 learning rate.
+
+### Dependencies
+* skimage
+* Tensorflow
+* Keras >= 2.1.2
+* Pandas
+ 
+ Python version 3
 
 ### Model
  The provided model is basically a convolutional auto-encoder, but with a twist - it has skip connections from encoder layers to decoder layers that are on the same "level".
@@ -61,17 +73,4 @@ makes sure that mask pixels are in \[0, 1\] range.
 ### Model Constructed using KERAS API
 
 <img src="model.png" alt="Model" height=50%/>
-
-### Training
- The model is trained for 150 epochs,where each epoch took 8sec on NVIDIA K80 GPU
- loss function used keras binary_cross_entropy
- The weights are updated by Adam optimizer, with a 1e-5 learning rate.
-
-### Dependencies
-* skimage
-* Tensorflow
-* Keras >= 2.1.2
-* Pandas
- 
- Python version 3
 
