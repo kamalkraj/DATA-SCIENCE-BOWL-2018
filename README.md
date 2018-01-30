@@ -40,6 +40,25 @@ makes sure that mask pixels are in \[0, 1\] range.
 
 ![img/model.png](model.png)
 
+### Training
+ The model is trained for 150 epochs,where each epoch took 8sec on NVIDIA K80 GPU
+ loss function used keras binary_cross_entropy
+ The weights are updated by Adam optimizer, with a 1e-5 learning rate.
+
+### Dependencies
+* skimage
+* Tensorflow
+* Keras >= 2.1.2
+* Pandas
+ Python version 3
+
+### Run the model
+```bash
+  python main.py
+```
+It will train,predict and generate submission file
+
+
 
 
 
