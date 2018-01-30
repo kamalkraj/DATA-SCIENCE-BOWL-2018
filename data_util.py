@@ -25,7 +25,7 @@ train_ids = next(os.walk(TRAIN_PATH))[1]
 test_ids = next(os.walk(TEST_PATH))[1]
 
 # Function read train images and mask return as nump array
-def read_train_data(IMG_WIDTH=128,IMG_HEIGHT=128,IMG_CHANNELS=3):
+def read_train_data(IMG_WIDTH=256,IMG_HEIGHT=256,IMG_CHANNELS=3):
     X_train = np.zeros((len(train_ids), IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS), dtype=np.uint8)
     Y_train = np.zeros((len(train_ids), IMG_HEIGHT, IMG_WIDTH, 1), dtype=np.bool)
     print('Getting and resizing train images and masks ... ')
@@ -54,7 +54,7 @@ def read_train_data(IMG_WIDTH=128,IMG_HEIGHT=128,IMG_CHANNELS=3):
     return X_train,Y_train
 
 # Function to read test images and return as numpy array
-def read_test_data(IMG_WIDTH=128,IMG_HEIGHT=128,IMG_CHANNELS=3):
+def read_test_data(IMG_WIDTH=256,IMG_HEIGHT=256,IMG_CHANNELS=3):
     X_test = np.zeros((len(test_ids), IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS), dtype=np.uint8)
     sizes_test = []
     print('\nGetting and resizing test images ... ')

@@ -20,7 +20,7 @@ def dice_coef_loss(y_true, y_pred):
     return -dice_coef(y_true, y_pred)
 
 
-def get_unet(IMG_WIDTH=128,IMG_HEIGHT=128,IMG_CHANNELS=3):
+def get_unet(IMG_WIDTH=256,IMG_HEIGHT=256,IMG_CHANNELS=3):
     inputs = Input((IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS))
     s = Lambda(lambda x: x / 255) (inputs)
     c1 = Conv2D(16, (3, 3), activation='elu', kernel_initializer='he_normal', padding='same') (s)
