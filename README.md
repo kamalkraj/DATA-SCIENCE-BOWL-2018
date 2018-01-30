@@ -33,8 +33,13 @@ See picture below (note that image size and numbers of convolutional filters in 
 
 This deep neural network is implemented with Keras functional API, which makes it extremely easy to experiment with different interesting architectures.
 
-Output from the network is a 64 x 80 which represents mask that should be learned. Sigmoid activation function
+Output from the network is a 128 x 128 which represents mask that should be learned. Sigmoid activation function
 makes sure that mask pixels are in \[0, 1\] range.
+
+### Model Constructed using KERAS API
+
+![img/model.png](model.png)
+
 
 
 
