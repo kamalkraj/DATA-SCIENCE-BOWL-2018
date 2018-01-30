@@ -48,7 +48,9 @@ To learn more about colab [Click Here](https://medium.com/deep-learning-turkey/g
 
 ### Training
  The model is trained for 150 epochs,where each epoch took 8sec on NVIDIA K80 GPU
+ 
  loss function used keras binary_cross_entropy
+ 
  The weights are updated by Adam optimizer, with a 1e-5 learning rate.
 
 ### Dependencies
