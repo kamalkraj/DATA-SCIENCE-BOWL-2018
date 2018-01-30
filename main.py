@@ -2,7 +2,7 @@ from data_util import read_train_data,read_test_data,prob_to_rles,mask_to_rle,re
 from model import get_unet
 import pandas as pd
 
-epochs = 150
+epochs = 50
 
 # get train_data
 train_img,train_mask = read_train_data()
