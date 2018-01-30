@@ -17,3 +17,25 @@ and can be a good staring point for further, more serious approaches.
 
 The architecture was inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/).
 
+## Overview
+
+### Data
+Data for the competition is available in the data folder.```data_util.py``` just loads the images and saves them into NumPy binary format files **.npy** for faster loading later.
+
+### Pre-processing
+The images are not pre-processed in any way,except resizing 128 x 128
+
+### Model
+ The provided model is basically a convolutional auto-encoder, but with a twist - it has skip connections from encoder layers to decoder layers that are on the same "level".
+See picture below (note that image size and numbers of convolutional filters in this tutorial differs from the original U-Net architecture).
+
+![img/u-net-architecture.png](img/u-net-architecture.png)
+
+This deep neural network is implemented with Keras functional API, which makes it extremely easy to experiment with different interesting architectures.
+
+Output from the network is a 64 x 80 which represents mask that should be learned. Sigmoid activation function
+makes sure that mask pixels are in \[0, 1\] range.
+
+
+
+
