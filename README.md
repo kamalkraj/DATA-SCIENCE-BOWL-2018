@@ -59,8 +59,11 @@ makes sure that mask pixels are in \[0, 1\] range.
 ```
 It will train,predict and generate submission file
 
-
-
-
-
+### Run the Data-science-bowl-2018 notebook on Google colab
+0) Download the Data-science-bowl-2018.ipynb notebook from this repo
+1) Goto [Colab](https://colab.research.google.com)
+2) Goto File-->Upload Notebook . Upload the notebook
+3) Goto menu Runtime-->Change runtime and select HardWare accelerator GPU (Free Nvidia K80 GPU from google,it can run continues for 12hrs)
+4) Execute all cells and download the submission files from colab (Codes included at end of Notebook for downloading files to local system from colab)
+To learn more about colab [Click Here](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
 
