@@ -50,6 +50,7 @@ makes sure that mask pixels are in \[0, 1\] range.
 * Tensorflow
 * Keras >= 2.1.2
 * Pandas
+ 
  Python version 3
 
 ### Run the model
