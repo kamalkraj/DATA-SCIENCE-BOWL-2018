@@ -38,7 +38,7 @@ makes sure that mask pixels are in \[0, 1\] range.
 
 ### Model Constructed using KERAS API
 
-<img src="model.png" alt="Model" width="600" height="1000"/>
+<img src="model.png" alt="Model" width="800" height="1200"/>
 
 ### Training
  The model is trained for 150 epochs,where each epoch took 8sec on NVIDIA K80 GPU
